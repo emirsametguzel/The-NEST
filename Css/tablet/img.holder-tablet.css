@@ -1,0 +1,64 @@
+
+
+/* img section */
+
+.img-cont-01{
+    margin-top: 10vh;
+    width: 100%;
+    height:auto;
+    position: relative;
+    background-color: black;
+    
+    overflow: visible;
+}
+.img-sct-01{
+    height: auto;
+}
+
+
+
+.img-stc-01{
+    overflow: visible;
+    position:static;
+}
+
+
+.img-up-01{
+
+    width:100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position:static;
+    overflow: visible;
+    top: 70%;
+    
+}
+
+.img-up-02{
+    width:90%;
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    overflow: visible;  
+}
+
+.txt-img-01{
+    font-size: 2rem;
+    padding: 1rem;
+    
+
+}
+
+.txt-img-02{
+    
+    padding: 1rem 1rem ;
+    margin: 0 2rem;
+    font-size: 1rem;
+    border-top: 1px solid black;
+   
+    
+}
+

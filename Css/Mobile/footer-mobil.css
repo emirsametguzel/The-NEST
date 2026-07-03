@@ -1,0 +1,48 @@
+/* Mobil CSS */
+
+@media only screen and (max-width: 600px) {
+    .foot {
+        flex-direction: column-reverse;
+        padding-right: 1rem; /* Sağda daha az boşluk bırak */
+        background: linear-gradient(138deg, rgba(7, 38, 79, 1) 0%, rgba(4, 45, 98, 1) 35%, rgba(0, 56, 130, 1) 100%);
+        background-size: 200% 200%;
+        animation: gradientShift 5s ease infinite;
+    }
+
+    .footer-a-01 {
+        margin: 1.2rem;
+        align-self: center; /* Merkezde kalmasını sağlar */
+    }
+
+    .footer-a-02 {
+        flex-direction: column;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .footer-pac-01, .footer-pac-02 {
+        text-align: center;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .footer-pac-01 h1, .footer-pac-02 h1 {
+        font-size: 1.2rem; /* Başlıkları küçült */
+    }
+
+    .footer-list-01 li, .footer-list-02 li {
+        font-size: 1rem; /* Liste elemanlarını küçült */
+        margin: 0.5rem 0;
+    }
+
+    .footer-pac-02 h1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Sığmayan metin için üç nokta ekler */
+    }
+
+    .iteam {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

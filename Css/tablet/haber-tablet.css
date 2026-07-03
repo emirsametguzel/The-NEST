@@ -1,0 +1,102 @@
+.hd {
+    color: black;
+    margin: 0 4%;
+    margin-top: 1rem;
+
+}
+
+.header {
+
+    width: 100%;
+
+}
+
+.box-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-2 {
+    width: 50%;;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+
+    align-items: center;
+}
+
+.box-2 img {
+    padding: 1rem;
+    width: 10rem;
+    height: 8rem;
+    border-radius: 2rem;
+}
+
+.box-txt {
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.box-2 p {
+
+    font-size: small;
+
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dvm {
+    color: maroon;
+
+
+}
+
+
+
+/* deneysel */
+
+.n2 {
+    width: 100%;
+}
+
+.brick {
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 1rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.brick img {
+
+    width: 90%;
+    margin: 1rem;
+    border-radius: 3rem;
+
+}
+
+.txt {
+    width: 90%;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.txt h2 {
+    margin: 0.5rem;
+}
+.txt p {
+    margin: 0.5rem;
+}
+
+.brick:nth-child(even){
+    flex-direction: column;
+
+}

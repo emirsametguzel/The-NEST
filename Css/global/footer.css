@@ -1,0 +1,97 @@
+/* Footer CSS (Genel) */
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem; /* Sağda boşluk bırakmak için */
+    background: linear-gradient(90deg, rgba(7, 38, 79, 1) 0%, rgba(4, 45, 98, 1) 35%, rgba(0, 56, 130, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+    color: #fefefe;
+}
+
+.footer-a-01 {
+    text-align: center; /* Yazıyı ortalar */
+    flex: 1; /* Yatayda merkezlemek için genişliği kaplar */
+    margin-right: auto; /* Sağ tarafta boşluk bırakır */
+    align-self: center; /* Ortalamak için */
+}
+.footer-a-02 {
+    display: flex;
+    justify-content: space-between; /* İki bölüm arasındaki boşluğu yaymak için */
+    flex-wrap: wrap; /* Küçük ekranlarda satırı taşmasını önlemek için */
+    margin: 4rem 0;
+    gap: 2rem; /* Bölümler arasında boşluk eklemek için */
+}
+
+.footer-pac-01,
+.footer-pac-02 {
+    flex: 1; /* Bölümlerin eşit genişlikte olmasını sağlamak için */
+    min-width: 200px; /* Küçük ekranlarda bölümlerin daha iyi görünmesi için */
+    padding-right:50px;
+}
+
+.footer-list-01,
+.footer-list-02 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-list-01 li,
+.footer-list-02 li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #d6d6d6;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.footer-list-01 li::before,
+.footer-list-02 li::before {
+    content: "•";
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.footer-pac-01 h1 {
+    border-bottom: 2px solid #007BFF; /* Başlıkların altına çizgi ekler */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    width:max-content;
+    display: inline-block; /* Çizginin genişliğini başlığa göre ayarlar */
+}
+
+.footer-pac-02 h1 {
+    border-bottom: 2px solid #007BFF; /* Başlıkların altına çizgi ekler */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    width:max-content;
+    display: inline-block; /* Çizginin genişliğini başlığa göre ayarlar */
+}
+
+.footer-list-01 li:hover,
+.footer-list-02 li:hover {
+    color: #40ADDE;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+
+.iteam {
+    margin-top: 1rem;
+    opacity: 60%;
+}

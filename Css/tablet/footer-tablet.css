@@ -1,0 +1,46 @@
+/* Tablet CSS */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .foot {
+        flex-direction: row;
+        justify-content: space-around; /* İçeriği yaymak için */
+        padding-right: 1rem;
+        background: linear-gradient(138deg, rgba(7, 38, 79, 1) 0%, rgba(4, 45, 98, 1) 35%, rgba(0, 56, 130, 1) 100%);
+        background-size: 200% 200%;
+        animation: gradientShift 5s ease infinite;
+    }
+
+    .footer-a-01 {
+        margin: 1.2rem;
+        align-self: center;
+        flex: 1;
+    }
+
+    .footer-a-02 {
+        flex-direction: row;
+        margin: 1rem 0;
+        gap: 1rem;
+        flex-wrap: wrap; /* Daha dar ekranlarda alt satıra geçmesini sağlar */
+    }
+
+    .footer-pac-01, .footer-pac-02 {
+        flex: 1;
+        text-align: left; /* Tablet görünümünde sola hizalanır */
+        margin: 1rem 1rem;
+        min-width: 200px;
+    }
+
+    .footer-pac-02 h1 {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .footer-list-01 li, .footer-list-02 li {
+        font-size: 1.1rem;
+    }
+
+    .iteam {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}

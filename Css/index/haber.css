@@ -1,0 +1,136 @@
+.hd {
+    color: black;
+    margin: 0 4%;
+    margin-top: 1rem;
+
+}
+
+.header {
+
+    width: 100%;
+
+}
+
+.box-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-2 {
+    width: 50%;
+
+
+
+    ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+
+    align-items: center;
+}
+
+.box-2 img {
+    padding: 1rem;
+    width: 10rem;
+    height: 8rem;
+    border-radius: 2rem;
+}
+
+.box-txt {
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.box-2 p {
+
+    font-size: small;
+
+}
+
+.container {
+    width: 80rem;
+    margin: auto;
+    margin-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dvm {
+    color: maroon;
+
+
+}
+
+
+
+
+/* pog button */
+
+.poog {
+    background-color: rgb(255, 255, 255);
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: 3rem 2rem;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.poog:hover {
+    border-radius: 2rem 3rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 15.5rem;
+    height: 5.5rem;
+    margin: 2.75rem;
+}
+
+.pog {
+    margin: auto;
+    text-decoration: none;
+}
+
+
+/* deneysel */
+
+.n2 {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.brick {
+    display: flex;
+    color: white;
+text-align: center;
+    border-radius: 1rem;
+    
+    margin: 1rem;
+}
+
+.brick img {
+
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 3rem;
+
+}
+
+.txt {
+    width: 60rem;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.txt h2 {
+    margin: 1rem;
+}
+
+.brick:nth-child(even){
+    flex-direction: row-reverse;
+
+}
