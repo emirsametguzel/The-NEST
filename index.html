@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -178,18 +179,13 @@
 
             </div>
         </div>
-        <script>
-            function resetForm() {
-    document.getElementById("Form").reset();
-}
-        </script>
         <div class="container">
             <div class="joinery">
                 <h1 id = "hed1">Eğitimlere katkıda bulun</h1>
                 <p id = "me1">The Nest herkese açık bir eğitim ağı sunuyor. Eğer siz de bir içerik üretmek istiyorsanız, makale, sunum, video ya da 3D görselleri bizimle paylaşın. Sizin de The Nest'te katkınız olsun!</p>
                 <a href="https://forms.gle/6hrbyvyUZFsSxpmx6" class="form-link">Google Forms</a>
         
-                <form id="Form" class="modern-form" action="https://formspree.io/f/mjgqjwrd" method="POST" onsubmit="resetForm(); return false;">
+                <form id="Form" class="modern-form" action="https://formspree.io/f/mjgqjwrd" method="POST">
                     <label id="namet" for="name">Ad:</label>
                     <input type="text" id="namei" name="name" placeholder="Adınızı Girin" required>
                     <label id="teamNumbert" for="teamNumber">Takım No:</label>
@@ -224,6 +220,7 @@
         
                     <button type="submit" id="button">Gönder</button>
                 </form>
+                <p id="formStatus" style="display:none; margin-top:1rem; font-weight:bold;"></p>
             </div>
     </div>
 
@@ -274,6 +271,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    document.getElementById("Form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const status = document.getElementById("formStatus");
+
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                status.textContent = "Mesajınız başarıyla gönderildi!";
+                status.style.color = "green";
+                status.style.display = "block";
+                form.reset();
+            } else {
+                status.textContent = "Bir hata oluştu, lütfen tekrar deneyin.";
+                status.style.color = "red";
+                status.style.display = "block";
+            }
+        }).catch(() => {
+            status.textContent = "Bağlantı hatası, lütfen tekrar deneyin.";
+            status.style.color = "red";
+            status.style.display = "block";
+        });
+    });
+    </script>
     
 </body>
 
